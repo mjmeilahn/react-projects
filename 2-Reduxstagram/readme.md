@@ -1,4 +1,4 @@
-# Learn Redux
+# REDUXSTAGRAM
 
 A simple React + Redux implementation.
 
