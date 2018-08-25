@@ -11,7 +11,7 @@ const Single = (props) => {
 
   return (
     <div className="single-photo">
-      <Photo i={i} post={post} {...props} />
+      <Photo index={i} post={post} {...props} />
       <Comments postComments={postComments} {...props} />
     </div>
   )
