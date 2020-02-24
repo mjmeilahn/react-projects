@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Message from './Message/Message';
 import './App.css';
 
+// FUNCTIONAL COMPONENT
 // function App() {
 //   return (
 //     <div className="App">
@@ -18,11 +20,14 @@ import './App.css';
 //         >
 //           Learn React
 //         </a>
+//         <Message/>
 //       </header>
 //     </div>
 //   );
 // }
 
+
+// CLASS COMPONENT, NOTICE SYNTACTICAL DIFFERENCES
 class App extends Component {
   render () {
     return (
@@ -40,6 +45,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          <Message/>
         </header>
       </div>
     );
