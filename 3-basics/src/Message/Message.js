@@ -1,9 +1,12 @@
 import React from 'react';
 
-function Person () {
+function Message (props) {
     return (
-        <h2>Hello world, { Math.random().toFixed(2) }</h2>
+        <section>
+            <h2>{props.text}, { Math.random().toFixed(2) }</h2>
+            <div>{props.children}</div>
+        </section>
     );
 }
 
-export default Person;
+export default Message;
