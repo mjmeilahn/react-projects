@@ -36,7 +36,7 @@ import './App.css';
 class App extends Component {
   state = {
     buttonText: 'Click HERE',
-    inputValue: '',
+    inputValue: 'two-way data binding',
     messages: [
       { text: 'Hello World', nested: '' },
       { text: '2nd Message', nested: 'Nested content' }
@@ -65,7 +65,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Input input={this.changeValue} val={this.inputValue}/>
+          <Input input={this.changeValue} val={this.state.inputValue}/>
           <h1>{this.state.inputValue}</h1>
 
           <button onClick={this.changeText}>{this.state.buttonText}</button>
@@ -82,13 +82,6 @@ class App extends Component {
 
 // AFTER REACT 16.8, USING HOOKS AND NEW CALLS TO STATE "useState"
 // funciton App () {
-//   const [messageState, setMessageState] = useState({
-//     messages: [
-//       { text: 'Hello World', nested: '' },
-//       { text: '2nd Message', nested: 'Nested content' }
-//     ]
-//   });
-
 //   const [buttonState, setButtonState] = useState({
 //     buttonText: 'Click HERE'
 //   });
