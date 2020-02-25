@@ -38,21 +38,53 @@ class App extends Component {
     buttonText: 'Click HERE',
     inputValue: 'two-way data binding',
     messages: [
-      { text: 'Hello World', nested: '' },
-      { text: '2nd Message', nested: 'Nested content' }
+      { text: 'Hello World', nested: '', newMessage: 'Changed!' },
+      { text: '2nd Message', nested: 'Nested content', newMessage: 'New message!' }
     ]
   }
 
-  changeText = newText => {
+  changeButton = newText => {
     // ALWAYS "setState", DO NOT USE this.buttonText = 'Changed!'
     // CHANGING STATE THIS WAY RE-RENDERS ALL COMPONENTS WITHIN CLASS
     // IN THE FUTURE, COPY STATE AND RETURN NEW STATE
     this.setState({
-      buttonText: (typeof newText === 'string') ? newText : 'Changed!'
+      buttonText: (typeof newText === 'string') ? newText : 'Clicked!'
     });
   }
 
-  changeValue = event => {
+  changeMessage = index => {
+
+    // COPY MESSAGE TO CHANGE IMMUTABLY
+    const message = {
+      ...this.state.messages[index]
+    }
+
+    // MAKE THE CHANGE
+    message.text = message.newMessage;
+
+    // COPY ALL MESSAGES
+    const messages = [...this.state.messages];
+
+    // UPDATE MESSAGE IN ARRAY
+    messages[index] = message;
+
+    // SET NEW STATE
+    this.setState({
+      messages
+    });
+  }
+
+  deleteMessage = index => {
+    // OR USE SPREAD OPERATOR E.G. ...this.state.messages
+    const messages = this.state.messages.slice();
+    messages.splice(index, 1);
+
+    this.setState({
+      messages
+    });
+  }
+
+  changeInput = event => {
     // CHANGING STATE THIS WAY RE-RENDERS ALL COMPONENTS WITHIN CLASS
     // IN THE FUTURE, COPY STATE AND RETURN NEW STATE
     this.setState({
@@ -65,13 +97,21 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Input input={this.changeValue} val={this.state.inputValue}/>
+          <Input input={this.changeInput} val={this.state.inputValue}/>
           <h1>{this.state.inputValue}</h1>
 
-          <button onClick={this.changeText}>{this.state.buttonText}</button>
+          <button onClick={this.changeButton}>{this.state.buttonText}</button>
 
-          <Message text="Hello world" click={this.changeText}/>
-          <Message text="2nd Message" click={this.changeText.bind(this, 'New message!')}>Nested content</Message>
+          {this.state.messages.map((message, i) => {
+            return <Message
+              key={'message_' + i}
+              text={message.text}
+              changeTitle={this.changeMessage.bind(this, i)}
+              click={this.changeButton.bind(this, message.newMessage)}
+              delete={this.deleteMessage.bind(this, i)}>
+                {message.nested.length > 0 ? message.nested : ''}
+            </Message>
+          })}
         </header>
       </div>
     );
@@ -86,7 +126,7 @@ class App extends Component {
 //     buttonText: 'Click HERE'
 //   });
 
-//   const changeText = newText => {
+//   const changeButton = newText => {
 //     setButtonState({
 //       buttonText: (typeof newText === 'string') ? newText : 'Changed!'
 //     });
@@ -100,10 +140,10 @@ class App extends Component {
 //           Edit <code>src/App.js</code> and save to reload.
 //         </p>
 
-//         <button onClick={changeText}>{buttonState.buttonText}</button>
+//         <button onClick={changeButton}>{buttonState.buttonText}</button>
 
-//         <Message text="Hello world" click={changeText}/>
-//         <Message text="2nd Message" click={changeText.bind(this, 'New message!')}>Nested content</Message>
+//         <Message text="Hello world" click={changeButton}/>
+//         <Message text="2nd Message" click={changeButton.bind(this, 'New message!')}>Nested content</Message>
 //       </header>
 //     </div>
 //   );
