@@ -93,12 +93,20 @@ class App extends Component {
   }
 
   render () {
+    let classes = [];
+
+    if (this.state.messages.length <= 2) {
+      classes.push('bold', 'red');
+    }
+
+    classes = classes.join(' ');
+
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Input input={this.changeInput} val={this.state.inputValue}/>
-          <h1>{this.state.inputValue}</h1>
+          <h1 className={classes}>{this.state.inputValue}</h1>
 
           <button onClick={this.changeButton}>{this.state.buttonText}</button>
 
