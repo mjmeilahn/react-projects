@@ -126,7 +126,6 @@ class App extends Component {
           <Button onClick={this.changeButton}>
             {this.state.buttonText}
           </Button>
-          {/* <button onClick={this.changeButton}>{this.state.buttonText}</button> */}
 
           {this.state.messages.map((message, i) => {
             return <Message
