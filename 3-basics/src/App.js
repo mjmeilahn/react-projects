@@ -1,8 +1,23 @@
 import React, { Component, useState } from 'react';
+import styled from 'styled-components';
 import logo from './logo.svg';
 import Input from './Input/Input';
 import Message from './Message/Message';
 import './App.css';
+
+const Button = styled.button`
+  background-color: #4885ed;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+
+  @media (min-width: 360px) {
+    padding: 10px 30px;
+  }
+`;
+
 
 // FUNCTIONAL COMPONENT
 // OTHERWISE KNOWN AS DISPLAY OR DUMB COMPONENTS
@@ -93,22 +108,25 @@ class App extends Component {
   }
 
   render () {
-    let classes = [];
+    let assignedClasses = [];
 
     if (this.state.messages.length <= 2) {
-      classes.push('bold', 'red');
+      assignedClasses.push('bold', 'red');
     }
 
-    classes = classes.join(' ');
+    assignedClasses = assignedClasses.join(' ');
 
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <Input input={this.changeInput} val={this.state.inputValue}/>
-          <h1 className={classes}>{this.state.inputValue}</h1>
+          <h1 className={assignedClasses}>{this.state.inputValue}</h1>
 
-          <button onClick={this.changeButton}>{this.state.buttonText}</button>
+          <Button onClick={this.changeButton}>
+            {this.state.buttonText}
+          </Button>
+          {/* <button onClick={this.changeButton}>{this.state.buttonText}</button> */}
 
           {this.state.messages.map((message, i) => {
             return <Message
