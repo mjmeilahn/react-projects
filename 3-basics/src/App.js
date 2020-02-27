@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import Boundary from './Boundary/Boundary';
 import styled from 'styled-components';
 import logo from './logo.svg';
 import Input from './Input/Input';
@@ -91,28 +92,30 @@ class App extends Component {
     assignedClasses = assignedClasses.join(' ');
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Input input={this.changeInput} val={this.state.inputValue}/>
-          <h1 className={assignedClasses}>{this.state.inputValue}</h1>
+      <Boundary>
+        <div className="App">
+          <header className="App-header">
+            <img src={logo} className="App-logo" alt="logo" />
+            <Input input={this.changeInput} val={this.state.inputValue}/>
+            <h1 className={assignedClasses}>{this.state.inputValue}</h1>
 
-          <Button onClick={this.changeButton}>
-            {this.state.buttonText}
-          </Button>
+            <Button onClick={this.changeButton}>
+              {this.state.buttonText}
+            </Button>
 
-          {this.state.messages.map((message, i) => {
-            return <Message
-              key={'message_' + i}
-              text={message.text}
-              changeTitle={this.changeMessage.bind(this, i)}
-              click={this.changeButton.bind(this, message.newMessage)}
-              delete={this.deleteMessage.bind(this, i)}>
-                {message.nested.length > 0 ? message.nested : ''}
-            </Message>
-          })}
-        </header>
-      </div>
+            {this.state.messages.map((message, i) => {
+              return <Message
+                key={'message_' + i}
+                text={message.text}
+                changeTitle={this.changeMessage.bind(this, i)}
+                click={this.changeButton.bind(this, message.newMessage)}
+                delete={this.deleteMessage.bind(this, i)}>
+                  {message.nested.length > 0 ? message.nested : ''}
+              </Message>
+            })}
+          </header>
+        </div>
+      </Boundary>
     );
   }
 }
