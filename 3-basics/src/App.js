@@ -43,7 +43,6 @@ class App extends Component {
   }
 
   changeMessage = index => {
-
     // COPY MESSAGE TO CHANGE IMMUTABLY
     const message = {
       ...this.state.messages[index]
