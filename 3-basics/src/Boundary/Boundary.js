@@ -9,7 +9,7 @@ class Boundary extends Component {
     componentDidCatch (err, info) {
         this.setState({
             isError: true,
-            message:err
+            message: err
         });
     }
 
