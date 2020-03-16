@@ -1,9 +1,9 @@
 import React, { Component, useState } from 'react';
-import Boundary from './Boundary/Boundary';
+import Boundary from './components/Boundary/Boundary';
 import styled from 'styled-components';
 import logo from './logo.svg';
-import Input from './Input/Input';
-import Message from './Message/Message';
+import Input from './components/Input/Input';
+import Message from './components/Message/Message';
 import './App.css';
 
 const Button = styled.button`
