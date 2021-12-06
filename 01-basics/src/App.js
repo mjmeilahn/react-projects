@@ -1,10 +1,11 @@
 
-import ExpenseItem from "./components/ExpenseItem"
+import ExpenseItem from "./components/Expense/ExpenseItem"
+import Card from "./components/UI/Card"
 
 function App() {
 
   // GLOBAL STATE
-  // IN THE FUTURE YOU'D CONNECT TO A DATABASE OR REDUX
+  // FUTURE PROJECTS CONNECT TO A DATABASE OR REDUX
   const expenses = [
     {
       title: 'Car Insurance',
@@ -12,8 +13,8 @@ function App() {
       date: new Date(2021, 3, 4)
     },
     {
-      title: 'Electric Bill',
-      amount: 50.13,
+      title: 'New TV',
+      amount: 350.13,
       date: new Date(2021, 2, 5)
     },
     {
@@ -27,9 +28,11 @@ function App() {
   return (
     <div>
       <h2>Hello World</h2>
-      {expenses.map((e, i) => (
-        <ExpenseItem key={i} title={e.title} amount={e.amount} date={e.date}/>
-      ))}
+      <Card className="expenses">
+        {expenses.map((e, i) => (
+          <ExpenseItem key={i} title={e.title} amount={e.amount} date={e.date}/>
+        ))}
+      </Card>
     </div>
   )
 }
