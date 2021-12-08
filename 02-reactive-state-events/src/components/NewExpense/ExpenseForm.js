@@ -60,10 +60,10 @@ const ExpenseForm = (props) => {
 
     const submitHandler = (event) => {
         event.preventDefault()
-        if (enteredTitle.length && typeof enteredTitle === 'string' && enteredAmount > 0 && typeof enteredAmount === 'string' && enteredDate.length && typeof enteredDate === 'string') {
+        if (enteredTitle.length && typeof enteredTitle === 'string' && enteredAmount.length && typeof enteredAmount === 'string' && enteredDate.length && typeof enteredDate === 'string') {
             const expenseData = {
                 title: enteredTitle,
-                amount: enteredAmount,
+                amount: +enteredAmount,
                 date: new Date(enteredDate)
             }
             props.formSubmit(expenseData)
