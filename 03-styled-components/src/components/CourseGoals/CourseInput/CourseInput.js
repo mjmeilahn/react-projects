@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import { useState } from 'react'
 
-import Button from '../../UI/Button/Button';
-import './CourseInput.css';
+import Button from '../../UI/Button/Button'
+import './CourseInput.css'
 
 const CourseInput = props => {
-  const [enteredValue, setEnteredValue] = useState('');
+  const [enteredValue, setEnteredValue] = useState('')
 
   const goalInputChangeHandler = event => {
-    setEnteredValue(event.target.value);
-  };
+    setEnteredValue(event.target.value)
+  }
 
   const formSubmitHandler = event => {
-    event.preventDefault();
-    props.onAddGoal(enteredValue);
-  };
+    event.preventDefault()
+    props.onAddGoal(enteredValue)
+  }
 
   return (
     <form onSubmit={formSubmitHandler}>
@@ -23,7 +23,7 @@ const CourseInput = props => {
       </div>
       <Button type="submit">Add Goal</Button>
     </form>
-  );
-};
+  )
+}
 
-export default CourseInput;
+export default CourseInput
