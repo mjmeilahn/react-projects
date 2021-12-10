@@ -2,6 +2,15 @@
   margin: 0.5rem 0;
 }
 
+.form-control.invalid input {
+  border-color: red;
+  background: #ffd7d7;
+}
+
+.form-control.invalid label {
+  color: red;
+}
+
 .form-control label {
   font-weight: bold;
   display: block;
