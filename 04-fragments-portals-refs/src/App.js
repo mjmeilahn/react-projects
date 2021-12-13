@@ -16,6 +16,8 @@ function App() {
   }
 
   return (
+    // BELOW IS SHORT HAND FOR <React.Fragment>
+    // WHICH COULD BE DESCTRUCTURED AS import { Fragment } from 'react'
     <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
