@@ -3,7 +3,7 @@ One repo that contains a list of my React pet projects.
 
 1. Basics (React 17+) - Exploring basic functional Components. Importing components, passing props, dynamic classNames. No look at state management yet, purely static components.
 
-2. Reactive State Management - Local Component State Communication from Child to Parent. Two-Way Binding. Difference between individual vs. multiple set-state functions, conditional filtering of arrays and components. Basic intro to Hooks with "useState" and how components can become Functional with Hooks.
+2. Reactive State Management - Local Component State Communication from Child to Parent. Two-Way Binding. Difference between individual vs. multiple set-state functions, conditional filtering of arrays and components. Basic intro to Hooks with "useState" and how Functional components use Hooks.
 
 3. Styling - In depth look at Global CSS, Styled Components and CSS Modules. Exploring Pros & Cons of each and how reactive JS utilizes these approaches.
 
