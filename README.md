@@ -7,7 +7,7 @@ One repo that contains a list of my React pet projects.
 
 3. Styling - In depth look at Global CSS, Styled Components and CSS Modules. Exploring Pros & Cons of each and how reactive JS utilizes these approaches.
 
-4. Fragments, Portals, Refs - TBD.
+4. Fragments, Portals, Refs - Rendering Sibling components with React.Fragment or <></> as its shorthand.
 
 5. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
