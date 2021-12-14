@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Card from '../UI/Card/Card'
 import classes from './Login.module.css'
 import Button from '../UI/Button/Button'
@@ -11,20 +11,26 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState()
   const [formIsValid, setFormIsValid] = useState(false)
 
+  useEffect(() => {
+    // USING A TIMEOUT AS A DO-IT-YOURSELF DEBOUNCE EFFECT
+    const indentifier = setTimeout(() => {
+      console.log('Checking form validity')
+      setFormIsValid(
+        enteredEmail.includes('@') && enteredPassword.trim().length > 6
+      )
+    }, 500)
+    return () => {
+      console.log('Cleanup')
+      clearTimeout(indentifier)
+    }
+  }, [enteredEmail, enteredPassword])
+
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value)
-
-    setFormIsValid(
-      event.target.value.includes('@') && enteredPassword.trim().length > 6
-    )
   }
 
   const passwordChangeHandler = (event) => {
     setEnteredPassword(event.target.value)
-
-    setFormIsValid(
-      event.target.value.trim().length > 6 && enteredEmail.includes('@')
-    )
   }
 
   const validateEmailHandler = () => {
