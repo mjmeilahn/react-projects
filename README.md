@@ -7,9 +7,9 @@ One repo that contains a list of my React pet projects.
 
 3. Styling - In depth look at Global CSS, Styled Components and CSS Modules. Exploring Pros & Cons of each and how reactive JS utilizes these approaches.
 
-4. Fragments, Portals, Refs - Rendering Sibling components with React.Fragment or <></> as its shorthand. Passing components to any DOM node via Portals and ReactDOM library - useful for components like Modals that need to be decoupled from a HTML hierarchy. Using Refs to pass input values without listening to every keystroke - there are performance improvements to this method even if the elements become an uncontrolled component - because React is no longer managing that individual element, it is handled natively from the browser.
+4. Fragments, Portals, Refs - Rendering Sibling components with React.Fragment, Fragment or <></> as its shorthand. Passing components to any DOM node via Portals and ReactDOM library - useful for components like Modals that need to be decoupled from a HTML hierarchy. Using Refs to pass input values without listening to every keystroke - there are performance improvements to this method even if the elements become an uncontrolled component - because React is no longer managing that individual element, it is handled natively from the browser.
 
-5. Effects - useEffect() is a lifecycle hook that fires once and then listens to changes (whether you specify dependencies) and reacts to them however you specify to handle unique edge cases in your application. Best for single changes, not continuous changes like keystrokes into a text input element. For coninuous changes think of how you can utilize a debounce effect that fires after a pause in user interaction - and then run useEffect().
+5. Effects - useEffect() is a lifecycle hook that listens to changes (whether you specify dependencies) and reacts to them however you specify to handle unique edge cases in your application. Best for single changes, not continuous changes like keystrokes into a text input element. For coninuous changes think of how you can utilize a debounce effect that fires after a pause in user interaction - and then run useEffect(). Never call useEffect() outside of a React component or within a nested function or conditional statement.
 
 6. Reducers, Context API - TBD.
 
