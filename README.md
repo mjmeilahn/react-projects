@@ -3,7 +3,7 @@ One repo that contains a list of my React pet projects.
 
 1. Basics (React 17+) - Exploring basic functional Components. Importing components, passing props, dynamic classNames. No look at state management yet, purely static components.
 
-2. Reactive State Management - Local Component State Communication from Child to Parent. Two-Way Binding. Difference between individual vs. multiple set-state functions, conditional filtering of arrays and components. Basic intro to Hooks with "useState" and how Functional components use Hooks.
+2. Reactive State Management - Local Component State Communication from Child to Parent. Two-Way Binding. Difference between individual vs. multiple set-state functions, conditional filtering of arrays and components. Basic intro to Hooks with "useState()" that returns an array of the value of its state and set state function.
 
 3. Styling - In depth look at Global CSS, Styled Components and CSS Modules. Exploring Pros & Cons of each and how reactive JS utilizes these approaches.
 
@@ -13,7 +13,7 @@ One repo that contains a list of my React pet projects.
 
 6. Reducers, Context API - useReducer() is a lifecycle hook that expands on useState() for state management kind of like a mini-Redux that dispatches actions with a payload and updates state. Useful for state that requires a hierarchy but useState() is the standard approach. Context API allows component communication with "global" state to any component regardless of Parent-Child status. Callable through useContext() hook. As before with useEffect, never call useReducer() or useContext() outside of a React component or within a nested function or conditional statement.
 
-7. Optimization Techniques - TBD.
+7. Parent-Child Seletive Re-render Techniques - TBD.
 
 8. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 

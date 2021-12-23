@@ -27,6 +27,9 @@ const DUMMY_EXPENSES = [
 
 
 const App = () => {
+  // IN THIS EXAMPLE, "DUMMY_EXPENSES" VARIABLE IS THE INITIAL STATE
+  // "expenses" IS THE VALUE OF THE STATE
+  // "setExpenses" IS THE FUNCTION TO SET NEW STATE
   const [expenses, setExpenses] = useState(DUMMY_EXPENSES)
 
   const addExpense = (expense) => {
