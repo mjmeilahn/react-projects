@@ -15,10 +15,12 @@ One repo that contains a list of my React pet projects.
 
 7. Parent-Child Seletive Re-render Techniques - Learning how to optimize large apps with hooks React.memo(), useCallback() & useMemo(). Essentially when a Parent component's state updates it will re-render its child components. Exploring these lifecycle hooks to selectively render child components, store functions or data internally.
 
-8. Class Components - TBD.
+8. Class Components - Exploring class lifecycle methods, translating Functional compoents to Classes and how to manage state in class components. Since React 16.8 functional hooks like useState(), useEffect() and useReducer() have been the suggested way to build React applications - however, class components are still highly used in the React ecosystem.
 
-9. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
+9. TBD - TBD.
 
-10. ARCHIVED. React 16 Basics - Exploring basic Class vs. Functional Components. Importing components, passing JS, dynamic classNames, Props & State, Styled Components, Error Boundaries, Two-Way-Binding in JSX. Basic intro to Hooks with "useState" and how Class components can become Functional with Hooks. First look at updating Immutable State.
+10. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
-11. ARCHIVED. Reduxstagram - REACT + REDUX - This app requires local storage and cookies to be enabled to persist unique data. State is managed through Redux, and follows Immutable data best practices. The instagram feed is some of my colorful graphic designs from 2011.
+11. ARCHIVED. React 16 Basics - Exploring basic Class vs. Functional Components. Importing components, passing JS, dynamic classNames, Props & State, Styled Components, Error Boundaries, Two-Way-Binding in JSX. Basic intro to Hooks with "useState" and how Class components can become Functional with Hooks. First look at updating Immutable State.
+
+12. ARCHIVED. Reduxstagram - REACT + REDUX - This app requires local storage and cookies to be enabled to persist unique data. State is managed through Redux, and follows Immutable data best practices. The instagram feed is some of my colorful graphic designs from 2011.
