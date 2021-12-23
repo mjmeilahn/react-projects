@@ -13,7 +13,7 @@ One repo that contains a list of my React pet projects.
 
 6. Reducers, Context API - useReducer() is a lifecycle hook that expands on useState() for state management kind of like a mini-Redux that dispatches actions with a payload and updates state. Useful for state that requires a hierarchy but useState() is the standard approach. Context API allows component communication with "global" state to any component regardless of Parent-Child status. Callable through useContext() hook. As before with useEffect, never call useReducer() or useContext() outside of a React component or within a nested function or conditional statement.
 
-7. Parent-Child Seletive Re-render Techniques - TBD.
+7. Parent-Child Seletive Re-render Techniques - Learning how to optimize large apps with hooks React.memo(), useCallback() & useMemo(). Essentially when a Parent component's state updates it will re-render its child components. Exploring these lifecycle hooks to selectively render child components, store functions or data internally.
 
 8. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
