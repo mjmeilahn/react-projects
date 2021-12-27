@@ -17,7 +17,7 @@ One repo that contains a list of my React pet projects.
 
 8. Class Components - Exploring class lifecycle methods, translating Functional compoents to Classes and how to manage state in class components. Since React 16.8 functional hooks like useState(), useEffect() and useReducer() have been the suggested way to build React applications - however, class components are still highly used in the React ecosystem.
 
-9. HTTP Requests - TBD.
+9. HTTP & Asynchronous Requests - TBD.
 
 10. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
