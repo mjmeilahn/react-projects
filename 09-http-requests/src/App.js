@@ -1,7 +1,7 @@
-import React from 'react';
 
-import MoviesList from './components/MoviesList';
-import './App.css';
+import React from 'react'
+import MoviesList from './components/MoviesList'
+import './App.css'
 
 function App() {
   const dummyMovies = [
@@ -17,7 +17,7 @@ function App() {
       openingText: 'This is the second opening text of the movie',
       releaseDate: '2021-05-19',
     },
-  ];
+  ]
 
   return (
     <React.Fragment>
@@ -28,7 +28,7 @@ function App() {
         <MoviesList movies={dummyMovies} />
       </section>
     </React.Fragment>
-  );
+  )
 }
 
-export default App;
+export default App
