@@ -19,7 +19,7 @@ One repo that contains a list of my React pet projects.
 
 9. HTTP & Asynchronous Requests - Basic example of showing content or handling edge cases in asynchronous behavior in React applications. Using free Star Wars API & fetch() browser method as an example.
 
-10. Custom Hooks - TBD.
+10. Custom Hooks - Abstracting React hooks like "useState" and "useEffect" into a composable, reusable function. A custom hook is the only place to put these hooks as they cannot be stored in regular functions or conditional statements. Every custom hook must begin with the keyword "use" to be recognized by React.
 
 11. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
