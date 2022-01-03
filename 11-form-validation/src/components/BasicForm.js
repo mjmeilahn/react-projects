@@ -1,3 +1,4 @@
+
 const BasicForm = (props) => {
   return (
     <form>
@@ -19,7 +20,7 @@ const BasicForm = (props) => {
         <button>Submit</button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default BasicForm;
+export default BasicForm

@@ -1,3 +1,4 @@
+
 const SimpleInput = (props) => {
   return (
     <form>
@@ -9,7 +10,7 @@ const SimpleInput = (props) => {
         <button>Submit</button>
       </div>
     </form>
-  );
-};
+  )
+}
 
-export default SimpleInput;
+export default SimpleInput
