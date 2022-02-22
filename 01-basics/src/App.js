@@ -5,7 +5,7 @@ import Card from "./components/UI/Card"
 function App() {
 
   // GLOBAL STATE
-  // FUTURE PROJECTS CONNECT TO A DATABASE OR REDUX
+  // FUTURE PROJECTS CONNECT VIA CONTEXT API OR REDUX
   const expenses = [
     {
       title: 'Car Insurance',
@@ -29,8 +29,8 @@ function App() {
     <div>
       <h2>Hello World</h2>
       <Card className="expenses">
-        {expenses.map((e, i) => (
-          <ExpenseItem key={i} title={e.title} amount={e.amount} date={e.date}/>
+        {expenses.map((expense, i) => (
+          <ExpenseItem key={i} title={expense.title} amount={expense.amount} date={expense.date}/>
         ))}
       </Card>
     </div>

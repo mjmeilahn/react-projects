@@ -37,7 +37,7 @@ const AddUser = (props) => {
     }
     props.onAddUser(enteredName, enteredUserAge)
 
-    // RARELY USE MANUAL DOM MANIPULATION IN REACT
+    // YOU SHOULD RARELY USE MANUAL DOM MANIPULATION IN REACT
     // BUT HERE WE SIMPLY RESET VALUES AFTER A STATE UPDATE
     nameInputRef.current.value = ''
     ageInputRef.current.value = ''
