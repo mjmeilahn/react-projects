@@ -23,7 +23,7 @@ One repo that contains a list of my React pet projects.
 
 11. Form Validation - Exploring various approaches to validating forms via Refs and State. Looking mainly at Blur events in the DOM to provide real-time feedback to users on a particular input element with a custom message.
 
-12. Redux - TBD.
+12. Functional Redux, Class-Redux, React-Redux (NPM), Redux Toolkit (NPM) - TBD.
 
 13. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
