@@ -25,7 +25,7 @@ One repo that contains a list of my React pet projects.
 
 12. Plain Redux, Class-component Redux, Toolkit Redux (NPM) and React-Redux (NPM) - Adds Redux to a simple state management application in various flavors of Redux. This library should be utilized in an immutable fashion where predictable input generates predictable output with no side effects (aka Pure Functions). To update state, Redux follows this pattern: Any Function -> Dispatch -> Action Type -> Reducer Function -> Return New State -> Subscribe To Changes -> Update UI. Preferred approach in my personal opinion is a combination between Redux Toolkit and React-Redux (no Class Redux!). Best example which incorporates this combination is /components/Counter.js and /store/index.js. Toolkit has libraries built-in which handle immutability so state can be updated on simple one-liners depending on the payload.
 
-13. TBD - TBD.
+13. Async Redux - TBD.
 
 14. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
