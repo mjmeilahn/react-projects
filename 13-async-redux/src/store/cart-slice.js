@@ -43,6 +43,7 @@ const cartSlice = createSlice({
     }
 })
 
+export const cartActions = cartSlice.actions
 export const sendCartData = cart => {
     return async (dispatch) => {
         // ASYNC AWAIT CODE HERE...
@@ -50,8 +51,7 @@ export const sendCartData = cart => {
         // HANDLE RESPONSE ERRORS...
 
         // THEN DISPATCH CHANGES TO REDUX
-        // dispatch()
+        // dispatch(cartActions.actionFunction())
     }
 }
-export const cartActions = cartSlice.actions
 export default cartSlice
