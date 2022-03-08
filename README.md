@@ -27,10 +27,12 @@ One repo that contains a list of my React pet projects.
 
 13. Async Redux - Common patterns how to handle state updates that rely on asynchronous requests. In short there are two main options in React "useEffect()" hook where you make an AJAX request inside "useEffect()" OR host the function as an Action Creator "thunk" in the respective slice file (React Toolkit).
 
-14. React Router - TBD.
+14. React Router - Common routing patterns in React. Nested routes, logic in routes and main differences in React Router 5 vs. React Router 6.
 
-15. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
+15. TBD - TBD.
 
-16. ARCHIVED. React 16 Basics - Exploring basic Class vs. Functional Components. Importing components, passing JS, dynamic classNames, Props & State, Styled Components, Error Boundaries, Two-Way-Binding in JSX. Basic intro to Hooks with "useState" and how Class components can become Functional with Hooks. First look at updating Immutable State.
+16. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
-17. ARCHIVED. Reduxstagram - REACT + REDUX - This app requires local storage and cookies to be enabled to persist unique data. State is managed through Redux, and follows Immutable data best practices. The instagram feed is some of my colorful graphic designs from 2011.
+17. ARCHIVED. React 16 Basics - Exploring basic Class vs. Functional Components. Importing components, passing JS, dynamic classNames, Props & State, Styled Components, Error Boundaries, Two-Way-Binding in JSX. Basic intro to Hooks with "useState" and how Class components can become Functional with Hooks. First look at updating Immutable State.
+
+18. ARCHIVED. Reduxstagram - REACT + REDUX - This app requires local storage and cookies to be enabled to persist unique data. State is managed through Redux, and follows Immutable data best practices. The instagram feed is some of my colorful graphic designs from 2011.
