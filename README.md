@@ -31,7 +31,7 @@ One repo that contains a list of my React pet projects.
 
 15. Basic NextJS - Simple routing in NextJS applications. In all Next apps the first page fetched by a user is the server-side rendered DOM. Subsequent fetches are returned as a client-side React application. Next is better for SEO as the server rendered DOM is readable by search engines - the alternative being almost no semantic HTML elements or SEO keywords for an application using 100% React as its view, routing, etc. This example also has a file+folder approach to Routing instead of the custom approach via React Router.
 
-16. TBD - TBD.
+16. Advanced NextJS - TBD.
 
 17. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
