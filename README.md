@@ -29,7 +29,7 @@ One repo that contains a list of my React pet projects.
 
 14. React Router - Common routing patterns in React. Nested routes, logic in routes and main differences in React Router 5 vs. React Router 6.
 
-15. Basic NextJS - Simple routing in NextJS applications. In all Next apps the first page fetched by a user is the server-side rendered DOM. Subsequent fetches are returned as a client-side React application. Next is better for SEO as the server rendered DOM is readable by search engines - the alternative being almost no semantic HTML elements or SEO keywords for an application using 100% React as its view, routing, etc. This example also has a file+folder approach to Routing instead of the custom approach via React Router.
+15. Basic NextJS - Simple routing example where Next has a file+folder approach instead of the custom approach via React Router. Next is better for SEO as the server rendered DOM is readable by search engines - the alternative being almost no semantic HTML elements or SEO keywords for an application using 100% React as its view, routing, etc. In all Next apps the first page fetched by a user is the server-side rendered DOM, however all DOM elements need to be in their hard coded state OR pre-fetched through an API in the build process as Next will not pre-render elements that require State Management or Hooks to update their appearance by default e.g. useState(), useEffect(), useReducer() or useContext() - otherwise this fact can defeat the purpose of using Next if server-side rendering for SEO was the main goal. Subsequent fetches after initial page load are returned as a client-side React application.
 
 16. Advanced NextJS - TBD.
 
