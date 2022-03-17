@@ -1,5 +1,5 @@
-import Card from '../ui/Card';
-import classes from './MeetupItem.module.css';
+import Card from '../ui/Card'
+import classes from './MeetupItem.module.css'
 
 function MeetupItem(props) {
   return (
@@ -17,7 +17,7 @@ function MeetupItem(props) {
         </div>
       </Card>
     </li>
-  );
+  )
 }
 
-export default MeetupItem;
+export default MeetupItem

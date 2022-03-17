@@ -1,4 +1,4 @@
-import classes from './MainNavigation.module.css';
+import classes from './MainNavigation.module.css'
 
 function MainNavigation() {
 
@@ -16,7 +16,7 @@ function MainNavigation() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }
 
-export default MainNavigation;
+export default MainNavigation
