@@ -25,7 +25,7 @@ One repo that contains a list of my React pet projects.
 
 12. Plain Redux, Class-component Redux, Toolkit Redux (NPM) and React-Redux (NPM) - Adds Redux to a simple state management application in various flavors of Redux. This library should be utilized in an immutable fashion where predictable input generates predictable output with no side effects (aka Pure Functions). To update state, Redux follows this pattern: Any Function -> Dispatch -> Action Type -> Reducer Function -> Return New State -> Subscribe To Changes -> Update UI. Preferred approach in my personal opinion is a combination between Redux Toolkit and React-Redux (no Class Redux!). Best example which incorporates this combination is /components/Counter.js and /store/index.js. Toolkit has libraries built-in which handle immutability so state can be updated on simple one-liners depending on the payload.
 
-13. Async Redux - Common patterns how to handle state updates that rely on asynchronous requests. In short there are two main options in React "useEffect()" hook where you make an AJAX request inside "useEffect()" OR host the function as an Action Creator "thunk" in the respective slice file (React Toolkit).
+13. Async Redux - Common patterns how to handle state updates that rely on asynchronous requests. In short there are two main options in React: a) Make an AJAX request inside "useEffect()" OR b) Host the AJAX request as an Action Creator "thunk" in the respective slice file (React Toolkit) that updates its state.
 
 14. React Router - Common routing patterns in React. Nested routes, logic in routes and main differences in React Router 5 vs. React Router 6.
 
