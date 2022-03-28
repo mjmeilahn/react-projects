@@ -11,7 +11,7 @@ function handler(req, res) {
     if (req.method === 'POST') {
         const data = req.body
         const { title, address, image, description } = data
-        // SEND TO A DATABASE, ETC...
+        // SEND TO A DATABASE, RESPONSE W/ STATUS CODE, ETC...
     }
 }
 
