@@ -1,12 +1,18 @@
 
+import { Fragment } from 'react'
+import Head from 'next/head'
 import MeetupList from '../components/meetups/MeetupList'
 import { DUMMY_MEETUPS } from '../data/meetups'
 
 function Homepage(props) {
     return (
-        <section>
+        <Fragment>
+            <Head>
+                <title>React Meetups</title>
+                <meta name="description" content="All React Meetups!"/>
+            </Head>
             <MeetupList meetups={props.meetups} />
-        </section>
+        </Fragment>
     )
 }
 
