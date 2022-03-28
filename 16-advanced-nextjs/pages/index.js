@@ -19,12 +19,12 @@ function Homepage(props) {
 */
 export async function getStaticProps() {
     // FETCH FROM APIs HERE, EXPECT ASYNC AWAIT CODE.
-    // ALWAYS NEED TO RETURN AN OBJECT IN THIS FUNCTION.
+    // ALWAYS NEED TO RETURN AN OBJECT WITH PROPS IN THIS FUNCTION.
     return {
         props: {
             meetups: DUMMY_MEETUPS,
         },
-        revalidate: 10, // SECONDS "NextJS" WILL WAIT TO UPDATE PROPS
+        revalidate: 10, // SECONDS "NextJS" WILL WAIT TO UPDATE PROPS. ONLY USE IF WEB APP RELIES ON REAL-TIME DATA & CONSTANT VISUAL UI CHANGES.
     }
 }
 
