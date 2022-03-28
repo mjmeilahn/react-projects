@@ -1,11 +1,8 @@
 
-import { DUMMY_MEETUPS } from '../../data/meetups'
 import classes from './MeetupDetails.module.css'
 
 function MeetupDetails(props) {
-    const id = props.id || 'm1'
-    const meetup = DUMMY_MEETUPS.find(d => d.id === id)
-    const { title, image, address } = meetup
+    const { title, image, address } = props.meetup
 
     return (
         <section className={classes.detail}>
