@@ -1,7 +1,7 @@
 # React Projects
 One repo that contains a list of my React pet projects.
 
-1. Basics (React 17+) - Exploring basic functional Components. Importing components, passing props, dynamic classNames. No look at state management yet, purely static components.
+1. Basics - Exploring basic functional Components. Importing components, passing props, dynamic classNames. No look at state management yet, purely static components.
 
 2. Reactive State Management - Local Component State Communication from Child to Parent. Two-Way Binding. Difference between individual vs. multiple set-state functions, conditional filtering of arrays and components. Basic intro to Hooks with "useState()" that returns an array of the value of its state and set state function.
 
