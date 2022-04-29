@@ -5,3 +5,4 @@ node_modules/
 notes.md
 security-rules.json
 .next
+.env
