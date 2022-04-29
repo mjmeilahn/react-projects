@@ -33,7 +33,7 @@ One repo that contains a list of my React pet projects.
 
 16. Advanced NextJS - In depth example of Static vs. Server Side Rendering for a respective page, areas to host Back End requests and responses via "/api" folder, how to render dynamic pages via Static Paths, Meta and Title tags for each page.
 
-17. React NodeGUI - TBD.
+17. React NodeGUI - Basic example of using React for native desktop applications which compile down to Qt pre-compiled C++ components. The exports are performant for any OS including Mac, Windows or Linux. Important to note React NodeGUI library does not have full support or developers to maintain it unlike alternatives such as Electron.
 
 18. ARCHIVED. FishInventory - REACT + FIREBASE - This app uses authentication to log into your real-time Firebase data using a GitHub account, in order to persist unique data. Application state is updated on a parent component, passes unidirectional data flow into its child components. You can adjust inventory in your shop - Firebase passes real-time data to the store and prevents customers from having SOLD OUT items in their cart. There is no Checkout or Payment steps included in this demonstration.
 
