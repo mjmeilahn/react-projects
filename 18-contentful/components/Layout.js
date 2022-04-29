@@ -1,3 +1,4 @@
+
 import Link from 'next/link'
 
 export default function Layout({ children }) {
@@ -20,7 +21,7 @@ export default function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Copyright 2021 Just Add Marmite :)</p>
+        <p>Copyright {new Date().getFullYear()}</p>
       </footer>
     </div>
   )
