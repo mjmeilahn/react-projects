@@ -1,5 +1,4 @@
 # React Projects
-One repo that contains a list of my React pet projects.
 
 1. Basics - Exploring basic functional Components. Importing components, passing props, dynamic classNames. No look at state management yet, purely static components.
 
